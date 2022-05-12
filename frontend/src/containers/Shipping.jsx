@@ -109,7 +109,7 @@ const Shipping = () => {
                             <tr class="border">
                                 <td id="total-price">Total Price</td>
                                 <td id="item-count">{totalitem}</td>
-                                <td id="subtotal">${subtotal}</td>
+                                <td id="subtotal">${subtotal.toFixed(2)}</td>
                             </tr>
                         </table>
                     </div>

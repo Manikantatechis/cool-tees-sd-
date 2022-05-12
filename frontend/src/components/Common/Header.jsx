@@ -9,7 +9,9 @@ export default function Header() {
     const dispatch = useDispatch();
     const key = localStorage.getItem('LOGIN_USER_KEY');
     const [checkUser, setCheckUser] = useState(false);
-
+    const home= () => {
+        dispatch(push('/'))
+    }
     const signOutButton = () => {
         dispatch(signOut());
         setCheckUser(false);
@@ -26,10 +28,8 @@ export default function Header() {
         <>
             <header>
                 <div class="logo">
-                    <a href="/">
                         {' '}
-                        <img src={logo} alt="logo" />
-                    </a>
+                        <img src={logo} alt="logo" onClick={home} />
                 </div>
                 <nav>
                     {checkUser ? (

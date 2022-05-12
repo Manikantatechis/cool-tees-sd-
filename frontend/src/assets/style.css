@@ -114,8 +114,10 @@ hr {
       display: grid;
     grid-template-columns: auto auto auto auto;
 }
-.item-container .item{
+.item-container .item {
     margin-left: 10px;
+    height: 398px;
+    width: 21vw;
 }
 .item-container .item-grid .item-background {
     width: 100%;
@@ -212,6 +214,48 @@ span#count {
         grid-template-columns: auto auto auto;
     }
 }
+@media screen and (max-width: 2500px) {
+    .item-container .item {
+        height: 498px;
+    }
+    .item-container .item-grid .item-background .item-image img {
+        width: 95%;
+        height: 350px;
+        padding: 3%;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .item-container .item {
+        height: 400px;
+    }
+    .item-container .item-grid .item-background .item-image img {
+        width: 95%;
+        height: 300px;
+        padding: 3%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .item-container .item {
+        height: 350px;
+    }
+    .item-container .item-grid .item-background .item-image img {
+        width: 95%;
+        height: 250px;
+        padding: 3%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .item-container .item {
+        height: 300px;
+        width:92%;
+    }
+    .item-container .item-grid .item-background .item-image img {
+        width: 95%;
+        height: 200px;
+        padding: 3%;
+    }
+}
+
 @media screen and (max-width: 750px) and (min-width: 501px) {
     .item-container {
         margin: 10px 42px;
@@ -224,8 +268,13 @@ span#count {
         height: 350px;
     }
     .item-container .item-grid .item .item-background .item-image img {
-        height: 250px;
+        height: 200px;
         width: 85%;
+    }
+    .item-container .item {
+        margin-left: 10px;
+        height: 398px;
+        width: 37vw;
     }
     .item-container .item-grid .item .item-price h5,
     p,

@@ -8,7 +8,6 @@ from .serializers import CartSerializer, CartAddSerializer
 from ..users.mixins import CustomLoginRequiredMixin
 from django_filters.rest_framework import DjangoFilterBackend
 from .models import Cart
-from .forms import CartForm
 
 class CartList(CustomLoginRequiredMixin, generics.ListAPIView):
     queryset = Cart.objects.all()
